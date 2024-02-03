@@ -1,1 +1,68 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="modello.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body style="margin: 0 auto;">
+<!--------------------------  Body ----------------------------------->
 
+
+<!------------------Inizio NAV BAR------------------------->
+<div class="NavBarAll">
+  <div class="topnav" id="myTopnav">
+    <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
+      <a href="#Modelli">Modelli</a>
+      <a href="#Testimonianza">Testimonianza</a>
+      <a href="#Contatti">Contatti</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
+</div>
+
+
+
+<script>
+    function toggleResponsiveMenu() {
+        var navbar = document.getElementById("myTopnav");
+        if (navbar.className === "topnav") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "topnav";
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Setup event listeners for menu items
+        const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                var navbar = document.getElementById("myTopnav");
+                if (navbar.className.includes("responsive")) {
+                    navbar.className = "topnav";
+                }
+            });
+        });
+    });
+  </script>
+<!------------------Fine NAV BAR------------------------->
+
+<br><br>
+
+
+
+
+<br><br>
+  
+<!------------------Inizio Footer------------------------->
+    <div class="footer">
+      <br><br>
+      <p>Copyright © 2023 AndVit | All Rights Reserved</p>
+      <br>
+    </div>
+<!------------------Fine Footer--------------------------->
+  
+<!--------------------------Fine Body ----------------------------------->
+</body>
+</html>
