@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="TrattoriaGiuseppe.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    </head>
 <body>
+<!--------------------------  Body ----------------------------------->
+<!------------------Inizio NAV BAR------------------------->
     <div class="NavBarAll">
-        <div class="topnav" id="myTopnav">
-            <a class="active"></a>
-            <center>
-            <a href="#HOME">HOME</a>
-            <a href="#MENU">MENU</a>
-            <a href="#CHI SIAMO">CHI SIAMO</a>
-            <a href="#Contatti">Contatti</a>
-            </center>
-            <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
-        </div>
-        </div>
-    
-        <script>
-            function toggleResponsiveMenu() {
-                var navbar = document.getElementById("myTopnav");
-                if (navbar.className === "topnav") {
-                    navbar.className += " responsive";
-                } else {
-                    navbar.className = "topnav";
-                }
+    <div class="topnav" id="myTopnav">
+        <a class="active"></a>
+        <center>
+        <a href="#HOME">HOME</a>
+        <a href="#MENU">MENU</a>
+        <a href="#CHI SIAMO">CHI SIAMO</a>
+        <a href="#Contatti">Contatti</a>
+        </center>
+        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+    </div>
+    </div>
+
+    <script>
+        function toggleResponsiveMenu() {
+            var navbar = document.getElementById("myTopnav");
+            if (navbar.className === "topnav") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "topnav";
             }
-            
-            document.addEventListener("DOMContentLoaded", function () {
-                // Setup event listeners for menu items
-                const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
-                menuItems.forEach(item => {
-                    item.addEventListener('click', function() {
-                        var navbar = document.getElementById("myTopnav");
-                        if (navbar.className.includes("responsive")) {
-                            navbar.className = "topnav";
-                        }
-                    });
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            // Setup event listeners for menu items
+            const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    var navbar = document.getElementById("myTopnav");
+                    if (navbar.className.includes("responsive")) {
+                        navbar.className = "topnav";
+                    }
                 });
             });
-        </script>
+        });
+    </script>
+    <!------------------Fine NAV BAR------------------------->
+
+    <div id="testa">
+        <center>
+        <div id="HOME">
+        <h1 id="TRATTORIAPIZZERIA">TRATTORIA PIZZERIA<br>
+        <span id="DAGIUSEPPE"> DA GIUSEPPE</span></h1>
+        </div>
+        </center>
+    </div>
+
+    <center>
+    <div id="lista">
+        <a class="elementi" href=""><p>MENU</p></a>
+        <a class="elementi" href=""><p>PIZZE</p></a>
+        <a class="elementi" href=""><p>BEVANDI E VINI</p></a>
+    </div>
+    </center>
+    <div id="service">
+    </div>
+
+    <br><br>
+    <!------------------Inizio Footer------------------------->
+            <div class="footer">
+            <br><br>
+            <p>Copyright © 2023 AndVit | All Rights Reserved</p>
+            <br>
+            </div>
+<!------------------Fine Footer--------------------------->
+<!--------------------------Fine Body ----------------------------------->
 </body>
 </html>
