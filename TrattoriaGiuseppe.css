@@ -130,36 +130,48 @@ body {
 
 /* -----------Fine NAV BAR css------------------------*/ 
 
-
-
+body {
+  margin: 0px auto 0px;
+}
 
 div#testa {
-    background-image: url(fotoheropizza.jpg);
+    background-image: url(Foto/fotoheropizza.jpg);
     background-size: cover;
     background-position: center;
     color: black;
-
     padding: 25% 10px 10px 10px;
-
-    
 }
 
 #HOME {
     background-color: #291E00;
-    border-radius: 10px ;
-    width: 80%;
+    border-radius: 20px;
+    width: 90%;
 }
 
 #TRATTORIAPIZZERIA {
+    margin-bottom: -10px;
     font-weight: 900;
-    font-size: 58px;
+    font-size: 30px;
     color: white;
 }
 
 #DAGIUSEPPE {
     font-weight: 900;
-    font-size: 60px;
+    font-size: 50px;
     color: #FFC90B;
+}
+
+#lista {
+  margin-top: 15px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center; /* Centra lungo l'asse orizzontale */
+}
+a.elementi {
+  margin-bottom: 10px;
+}
+#service {
+  background-color: #d4a704;
 }
 
 @media screen and (max-width: 600px){
@@ -169,37 +181,31 @@ div#testa {
 }
 
 #HOME {
-    border-radius: 10px ;
-    width: 70%;
+    border-radius: 10px;
+    width: 80%;
     padding: 3px;
+  box-shadow: -5px 5px 10px black;
 }
 
 #TRATTORIAPIZZERIA {
     font-weight: 900;
     font-size: 28px;
     margin-top: 10px; 
+    padding-bottom: 20px;
+    padding: 0px 10px 20px 10px;
 }
 
 #DAGIUSEPPE {
     font-weight: 900;
     font-size: 28px;
-
+    padding-bottom: 20px;
+}
+a.elementi {
+  width: 95%;
 }
 
 }
 
-
-
-
-#lista {
-    margin-top: 15px;
-    display: flex;  
-    flex-wrap: wrap;
-
-    justify-content: center; /* Centra lungo l'asse orizzontale */
-    text-align: center; 
-
-}
 
 .elementi {
 
