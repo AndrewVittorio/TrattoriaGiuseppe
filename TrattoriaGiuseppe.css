@@ -226,6 +226,141 @@ a.elementi {
 
 
 
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+ margin: 20px ;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.896);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    flex-direction: row; /* Items side by side */
+    padding: 3px 9% 30px 9%;
+}
+
+.slideshow-container {
+    flex: 1; 
+
+}
+
+.description-wrapper {
+    flex: 1; /* Adjust as needed */
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
+}
+
+.slideshow-container img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .slideshow-container {
+        width: 85%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------Inizio Footer css------------------------*/ 
     .footer {
         background-color: black;
