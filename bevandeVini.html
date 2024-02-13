@@ -7,49 +7,103 @@
     <link rel="stylesheet" href="bevandeVini.css">
 </head>
 <body>
-    <img src="image0.jpeg" alt="">
-    <div id="titolo">
-        <h1>BEVANDE E VINI</h1>
+    <!doctype html>
+    <html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="modello.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    </head>
+    <body style="margin: 0 auto;">
+    <!--------------------------  Body ----------------------------------->
+    
+    
+    <!------------------Inizio NAV BAR------------------------->
+    <div class="NavBarAll">
+      <div class="topnav" id="myTopnav">
+        <a class="active"><img src="LogoAV.png style="width: 15vh;"></a>
+          <a href="#Modelli">Modelli</a>
+          <a href="#Testimonianza">Testimonianza</a>
+          <a href="#Contatti">Contatti</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+      </div>
     </div>
+    
+    
+    
+    <script>
+        function toggleResponsiveMenu() {
+            var navbar = document.getElementById("myTopnav");
+            if (navbar.className === "topnav") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "topnav";
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            // Setup event listeners for menu items
+            const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    var navbar = document.getElementById("myTopnav");
+                    if (navbar.className.includes("responsive")) {
+                        navbar.className = "topnav";
+                    }
+                });
+            });
+        });
+      </script>
+    <!------------------Fine NAV BAR------------------------->
+    
+    
+
+    <img src="image0.jpeg" alt="">
+    
+    <h1 id="titolo">BEVANDE E VINI</h1>
+ 
     <div id="li">
-        <h3>Bevande - Beverages</h3>
-        <div id="uno">
-            <p>Vino della casa bianco Lt</p>
-            <i>One litre wine of the house</i>
-    
-            <p>1/2Lt. vino della casa bianco</p>
-            <i>Vino della casa rosso Lt</i>
-    
-            <p>1/2Lt. vino della casa rosso</p>
-            <i>Half litre red wine of the house</i>
-    
-            <p>Acqua minerale (1 lt.)</p>
-            <i>Mineral water (1 lt.)</i>
-    
-            <p>Acqua minerale (1/2 lt.)</p>
-            <i>Mineral water (1/2 lt.)</i>
-    
-            <p>Coca Cola - Fanta - Sprite</p>
-            <i>Coca Cola - Orangeade - Sprite</i>
-    
-            <p>Birra alla spina media</p>
-            <i>Medium draught beer</i>
-    
-            <p>Birra alla spina piccola</p>
-            <i>Small draught beer</i>
-    
-            <p>Birra in bottiglia da cl.0,66</p>
-            <i>Bottled beer</i>
-    
-            <p>Liquori</p>
-            <i>Liqueurs</i>
-    
-            <p>Liquori Esteri</p>
-            <i>Liqueurs</i>
+        <div>
+            <h3>Bevande - Beverages</h3>
+            <div id="uno">
+                <p>Vino della casa bianco Lt</p>
+                <i>One litre wine of the house</i>
+        
+                <p>1/2Lt. vino della casa bianco</p>
+                <i>Vino della casa rosso Lt</i>
+        
+                <p>1/2Lt. vino della casa rosso</p>
+                <i>Half litre red wine of the house</i>
+        
+                <p>Acqua minerale (1 lt.)</p>
+                <i>Mineral water (1 lt.)</i>
+        
+                <p>Acqua minerale (1/2 lt.)</p>
+                <i>Mineral water (1/2 lt.)</i>
+        
+                <p>Coca Cola - Fanta - Sprite</p>
+                <i>Coca Cola - Orangeade - Sprite</i>
+        
+                <p>Birra alla spina media</p>
+                <i>Medium draught beer</i>
+        
+                <p>Birra alla spina piccola</p>
+                <i>Small draught beer</i>
+        
+                <p>Birra in bottiglia da cl.0,66</p>
+                <i>Bottled beer</i>
+        
+                <p>Liquori</p>
+                <i>Liqueurs</i>
+        
+                <p>Liquori Esteri</p>
+                <i>Liqueurs</i>
+            </div>
         </div>
        
-
-        <h3>Vini Bianchi - White Vines</h3>
+        <div>
+            <h3>Vini Bianchi - White Vines</h3>
         <p>Ribolla Gialla</p>
 
         <p>Pinot Grigio</p>
@@ -71,8 +125,10 @@
         <p>Frascati</p>
 
         <p>1/2l. bottiglia vino Bianco</p>
-
-        <h3>Vini Rossi- Red wines</h3>
+        </div>
+        
+        <div>
+            <h3>Vini Rossi- Red wines</h3>
         <p>Chianti</p>
      
         <p>Siraz del Lazio</p>
@@ -94,6 +150,8 @@
         <p>Rosè Cerasuolo d'Abruzzo</p>
 
         <p>1/2l. bottiglia vino Rosso</p>
+        </div>
+        
     </div>
 
     <!------------------Inizio Footer------------------------->
