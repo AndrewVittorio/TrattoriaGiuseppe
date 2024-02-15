@@ -154,6 +154,9 @@ img {
 .li p, i {
     padding-left: 30px;
 }
+.li p {
+  margin-bottom: -7px;
+}
 .li i {
     color: #6c6354;
 }
