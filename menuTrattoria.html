@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body><div class="NavBarAll">
+    <div class="topnav" id="myTopnav">
+      <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
+        <a href="#Modelli">Modelli</a>
+        <a href="#Testimonianza">Testimonianza</a>
+        <a href="#Contatti">Contatti</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+    </div>
+  </div>
+  
+  
+  
+  <script>
+      function toggleResponsiveMenu() {
+          var navbar = document.getElementById("myTopnav");
+          if (navbar.className === "topnav") {
+              navbar.className += " responsive";
+          } else {
+              navbar.className = "topnav";
+          }
+      }
+      
+      document.addEventListener("DOMContentLoaded", function () {
+          // Setup event listeners for menu items
+          const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+          menuItems.forEach(item => {
+              item.addEventListener('click', function() {
+                  var navbar = document.getElementById("myTopnav");
+                  if (navbar.className.includes("responsive")) {
+                      navbar.className = "topnav";
+                  }
+              });
+          });
+      });
+    </script>
+  <!------------------Fine NAV BAR------------------------->
+  
+    <img src="image1.jpeg" alt="">    
+    <h1 class="titolo">ANTIPASTI - HORS D'OEUVRE</h1>
+    <div class="li">
+        <div>
+            <P>ANTIPASTO BUFFET</P>
+            <I>HORS D'OUVRE BUFFET</I>
+
+            <P>ANTIPASTO ALL'ITALIANA</P>
+            <I>COLD HORS D'OUVRE BUFFET</I>
+            
+            <P>POLPETTE CACIO E UOVO</P>
+            <I>POLPETTE WITH CHEES EGGS</I>
+            
+            <P>PROSCIUTTO E BUFALA</P>
+            <I>HAM AND BUFFALO'S MOZZARELLA</I>
+            
+            <P>PROSCIUTTO E MELONE</P>
+            <I>HAM AND MELON</I>
+            
+            <P>CAPRESE</P>
+            <I>TOMATOES AND MOZZARELLA CHEESE</I>
+            
+            <P>MOZZARELLA DI BUFALA</P>
+            <I>MILK BUFFALO'S CHEESE</I>
+            
+            <P>ANTIPASTO DI MARE</P>
+            <I>SEAFOOD HORD D'OEUVRE</I>
+            
+            <P>SOOUTE' DI COZZE</P>
+            <I>SEAFOOD DISH WITH MUSSELS</I>
+
+            <P>CARPACCIO DI PESCE SPADA</P>
+            <I>SWORDFISH CARPACCIO</I>
+            
+            <P>OSTRICHE (cad.)</P>
+            <I>OYSTERS</I>
+
+            <P>ARROSTICINI DI CASTRATO</P>
+            <I>ROAST MEAT ON SKEWERS</I>
+
+            <P>BRUSHETTA AL POMODORO</P>
+            <I>TOASTED BREAD WITH TOMATOES</I>
+            
+            <P>BRUSCHETTA AL SALMONE</P>
+            <I>TOASTED BREAD WITH SALMON</I>
+            
+            <P>BRUSCHETTA AI PORCINI</P>
+            <I>TOASTED BREAD WITH MUSHROOMS</I>
+            
+            <P>BRUSCHETTE ALLE OLIVE</P>
+            <I>TOASTED BREAD WITH OLIVE</I>
+            
+            <P>BRUSCHETTE AL PROSCIUTTO</P>
+            <I>TOASTED BREAD WITH HAM</I>
+            
+            <P>OMELETTE A PIACERE</P>
+        </div>
+
+        <div>    
+            <h3>PRIMI DI TERRA - FIRST COURSE</h3>        
+            <P>TONNARELLI CACIO E PEPE</P>
+            <I>TONNARELLI WITH CHEES AND PEPPER</I>
+            
+            <P>PENNE ALL'ARRABBIATA</P>
+            <I>PENNE WITH TOMATO AND RED PEPPER</I>
+            
+            <P>SPAGHETTI ALLA CARBONARA</P>
+            <I>SPAGHETTI WITH BEATEN EGGS AND BACON</I>
+            
+            <P>BUCATINI ALL'AMATRICIANA</P>
+            <I>BUCATINI WITH TOMATO AND BACON</I>
+            
+            <P>BOMBOLOTTI CON MELANZANE</P>
+            <I>BOMBOLOTTI WITH EGG-PLANTS</I>
+            
+            <P>RAVIOLI RICOTTA E SPINACI</P>
+            <I>SMALL COILS OF PASTA WITH RICOTTA</I>
+            
+            <P>SPAGHETTI POMODORO E BASILICO</P>
+            <I>SPAGHETTI WITH TOMATO AND BASIL</I>
+            
+            <P>BAVETTE "ALLA GIUSEPPE" <br>(PACHINO E PECORINO)</P>
+            <I>BAVETTE PACHINO TOMATOES <br>AND PECORINO CHEESE</I>
+            
+            <p>PAPPARDELLE AL CINGHIALE</p>
+            <i>PAPPARDELLE WITH WILD-BOARD</i>
+            
+            <p>FETTUCCINE "ALLA GIUSEPPE" <br>(PROSCIUTTO, FUNGHI, PISELLI E PANNA)</p>
+            <i>FETTUCCINE IN A CREAM SAUCE <br>WITH HAM, MUSHROOMS AND PELAS</i>
+
+            <p>FETTUCCINE AI FUNGHI PORCINI</p>
+            <i>FETTUCCINE WITH BOLETUS MUSHROOMS</i>
+            
+            <p>SAGNE A PEZZI</p>
+            <i>POMODORO E BASILICO</i>
+            
+            <p>LASAGNA / CANNELLONI</p>          
+        </div> 
+        <div>
+            <h3>SECONDI PIATTI - SECOND COURSE</h3>
+
+            <p>BISTECCA DI MANZO</p>
+            <i>BEEF OF STEAK</i>
+            
+            <p>LOMBATA DI VITELLA</p>
+            <i>VEAL T-BONE STEAK</i>
+            
+            <p>COSTATA DI MANZO</p>
+            <i>CHOP STEAK</i>
+            
+            <p>FIORENTINA - MINIMO 6 ETTI</p>
+            <i>T-BONE STEAK "FIORENTINA STYLE"</i>
+
+            <p>TAGLIATA AI FUNGHI PORCINI</p>
+            <i>BEEF STEAK WITH BOLEUS MASHROOM</i>
+            
+            <p>STINCO DI MAIALE ALLA BAVARESE</p>
+            <i>PORK SHANK WITH BEER</i>
+            
+            <p>ABBACCHIO SCOTTADITO</p>
+            <i>SPECIAL ROAST LAMB</i>
+            
+            <p>BRACIOLA DI MAIALE</p>
+            <i>PORK CHOP</i>
+            
+            <p>ARROSTO MISTO AI FERRI</p>
+            <i>ARROSTED GRILLED</i>
+            
+            <p>MAIALINO AL FORNO</p>
+            <i>ROAST PORK WITH POTATOES</i>
+
+            <p>COSTINE DI MAIALE ARROSTO</p>
+            <i>ROASTED PORK RIBS</i>
+
+            <p>FILETTO AI FERRI</p>
+            <i>GRILLED FILLET</i>
+
+            <p>FILETTO AL PEPE VERDE</p>
+            <i>FILLET STEAK WITH GREEN PEPPER</i>
+            
+            <p>FILETTO AI FUNGHI PORCINI</p>
+            <i>FILLET WITH BOLETUS MASHROOMS</i>
+            
+            <p>FILETTO AL BRODO</p>
+            <i>FILLET WITH BAROLO WINE</i>
+            
+            <p>FILETTO ALLA PARMIGIANA</p>
+            <i>FILLET WITH BOLETUS MASHROOMS <br>IN A CREM SOUCE</i>
+            
+            <p>STRACCETTI AI FUNGHI PORCINI</p>
+            <i>THIN BEEF STRIP WITH BOLETUS MASHROOMS</i>
+            
+            <p>STRACCETTI CON RUGHETTA</p>
+            <i>THIN BEEF STRIP WITH ROCHET</i>
+            
+            <p>SALTIMBOCCA ALLA ROMANA</p>
+            <i>ROMAN'S VEAL ESCALOPE</i>
+
+            <p>SCALOPPINA AL LIMONE</p>
+            <i>VEAL ESCALOPE WITH LEMON</i>
+
+            <p>SCALOPPINA DELLA CASA</p>
+            <i>(PROSCIUTTO, MOZZARELLA, BASILICO) <br>VEAL ESCALOPE "GISEPPE STYLE" <br>HAM, MOZZARELLA CHEES, BASIL</i>
+
+            <p>CAPRICCIO DI CARNE</p>
+            <i>THIN VEAL SLICE LIGHTLY WITH LEMON JUICE</i>
+
+            <p>SALSICCIA CON VERDURE</p>
+            <i>SAUSAGES WITH VEGETABLES</i>
+
+            <p>TRIPPA ALLA ROMANA</p>
+            <i>TRIPE "ROMAN STYLE"</i>
+        </div>
+        <div>
+            <H3>MINESTRE - SOUP</H3>
+            
+            <P>TORTELLINI IN BRODO</P>
+            <I>TORTELLINI IN BROTH</I>
+            
+            <P>PASTA E CECI</P>
+            <I>PASTA AND CHICK-PEAS</I>
+            
+            <P>PASTA E FAGIOLI</P>
+            <I>PASTA AND BEANS</I>
+            
+            <P>PASTA E LENTICCHIE</P>
+            <I>PASTA AND LENTILS</I>
+
+            <h3>PRIMI DI PESCE - FIRST FISCH</h3>
+            <p>LINGUINE ALL'ASTICE</p>
+            <i>LINGUINE WITH LOBSTER</i>
+            
+            <p>GNOCCHI SPEAK E GORGONZOLA</p>
+            <i>GNOCCHI WITH SPEAK AND <br> GORGONZOLA CHEES</i>
+            
+            <p>GNOCCHI FUNGHI, PORCINI <br>GAMBERONI E PACHINO</p>
+            <i>GNOCCHI WITH MUSHROOMS <br>PRAWNS  AND PACHINO</i>
+            
+            <p>SPAGHETTI ALLE VONGOLE</p>
+            <i>SPAGHETTI WITH CLAMS</i>
+            
+            <p>SPAGHETTI ALLO SCOGLIO</p>
+            <i>SPAPGHETTI WITH MUSSELS, CLANS, <br>PRAWS AND CALAMARES</i>
+        
+            <p>TONNARELLI ASPARAGI E <br>GAMBERI</p>
+            <i>TONNARELLI WITH PRAWS AND <br>ASPARAGUS</i>
+            
+            <p>RISOTTO ALLA CREMA DI SCAMPI</p>
+            <i>RICE A SHRIMP SAUCE</i>
+            
+            <p>RISOTTO ALLA PESCATORA</p>
+            <i>RICE MUSSELS, CLAMS, PRAWNS, <br>CALAMARES</i>
+            
+            <p>RISOTTO AL RADICCHIO</p>
+            <i>RICE WITH RADICCHIO</i>
+        </div>
+        <div>
+            <h3>PESCE - FISH</h3>
+            <p>FRITTURA DI PESCE</p>
+            <i>FRIED OF FISH</i>            
+            
+            <p>FRITTO DI PARANZA</p>
+            
+            <p>SEPPIE AI FERRI</p>
+            <i>GRILLED CULETTE-FISH</i>
+            
+            <p>SPIGOLA AI FERRI</p>
+            <i>SEA BASS WITH SALT</i>
+            
+            <p>SPIGOLA AL SALE</p>
+            <i>SEA BASS WITH SALT</i>
+            
+            <p>ORATA AI FERRI</p>
+            <i>GRILLED SEABREAM</i>
+            
+            <p>ROMBO AL FORNO CON PATATE</p>
+            <i>RHOMBUS WITH POTATOS</i>
+            
+
+            <p>*SACAMPI AI FERRI</p>
+            <i>SHIRMPS GRILLED</i>
+            
+            
+            <p>*MAZZANCOLLE AI FERRI</p>
+            <i>PRAWNS GRILLED</i>
+            
+            <p>GRIGLIATA MISTA DI PESCE</p>
+            <i>MIX OF GRILLED FISH</i>
+            
+            <p>ASTICE ALLA CATALANA</p>
+            <i>LOBSTER CATANA STYLE</i>
+            
+            <p>ZUPPA DI PESCE</p>
+            <i>(SOLO SU ORDINAZIONE) FISH <br>SOUP (ONLY ORDER)</i>
+<br><br>
+            <i style="font-size: small;">*prodotti surgelati - frozen food</i>
+        </div>
+        <div>
+            <h3>VERDURE - VEGETABLES</h3>
+            
+            <p>INSALATA MISTA</p>
+            <i>MEXED SALAD</i>
+            
+            <p>INSALATA RICCA</p>
+            <i>HOME SALAD</i>
+            
+            <p>CICORIA</p>
+            <i>CHICORY</i>
+            
+            <p>SPINACI</p>
+            <i>SPINACH</i>
+            
+            <p>CARCIOFI</p>
+            <i>ROMAN'S ARTICHOKE</i>
+            
+            <p>ASPARAGI</p>
+            <i>ASPARAGUS</i>
+            
+            <p>PATATE ARROSTO</p>
+            <i>ROAST POTATOS</i>
+            
+            <p>PATATE FRITTE</p>
+            <i>GRENCH FRIES</i>
+            
+            <p>BUFALINA</p>
+            <i>AND PACHINO TOMATO <br>SALAD, ROKET, BUFFALO'S <br>CHEES</i>
+        </div>
+    </div>
+    <img src="image4.jpeg" alt="">
+    <h1 class="titolo">DESSERT</h1>
+    <div class="li">    
+        <div>
+            <p>FRUTTA MISTA</p>
+            <i>MIXED FRUIT</i>
+            
+            <p>MACEDONIA CON FRUTTA <br>DI STAGIONE</p>
+            <i>FRESH FRUIT SALAD <br>WITH FRUIT IN SEASON</i>
+            
+            <p>DOLCI DELLA CASA</p>
+            <i>SPECIALITIES OF HOUSE <br>OUR OWN HOME-MADE CAKES</i>
+            
+            <p>GELATO SFUSSO</p>
+            <i>HOME-MADE ICE CREAM</i>
+            
+            <p>GELATO CONFEZIONATO</p>
+            <i>PAKED ICE CREAM</i>
+            
+            <p>FRAGOLE</p>
+            <i>STRAWBERRIES</i>
+            
+            <p>FRAGOLE AL BAYLIS</p>
+            <i>STRAWBERRIES WITH BAYILS</i>
+            
+            <p>FRAGOLE CON GELATO E PANNA</p>
+            <i>STRAWBERRIES WITH <br>ICE-CREAM OR WIPPED <br>CREAM</i>
+            
+            <p>SGROPPINO AL LIMONE</p>
+            <i>LEMON ICE CREAM DRINK</i>
+            
+            <p>CAFFE'</p>
+            <i>COFFEE</i>
+
+            <p>CAPPUCCINO</p>
+        </div>
+    </div>
+      
+    <!------------------Inizio Footer------------------------->
+        <div class="footer">
+          <br><br>
+          <p>Copyright © 2023 AndVit | All Rights Reserved</p>
+          <br>
+        </div>
+</body>
+</html>
