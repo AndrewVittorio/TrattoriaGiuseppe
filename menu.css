@@ -21,6 +21,7 @@ body {
   }
   
   .topnav a {
+    text-align: center;
     float: right;
     display: block;
     color: #f2f2f2;
@@ -123,7 +124,7 @@ img {
     top: 0;
     z-index: -1;
 }
-#titolo {
+.titolo {
     text-align: center;
     color: white;
     background-color: #a27f00;
@@ -132,7 +133,7 @@ img {
     border-radius: 20px;
     box-shadow: -5px 5px 10px black;
 }
-#li {
+.li {
     font-weight: bold;
     font-size: larger;
     background-color: #fbe7c3;
@@ -145,18 +146,18 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 }
-#li h3 {
+.li h3 {
     padding-top: 10px;
     padding-left: 20px;
     margin-top: 30px;
 }
-#li p, i {
+.li p, i {
     padding-left: 30px;
 }
-#li i {
+.li i {
     color: #6c6354;
 }
-#li div#uno p {
+.li div#uno p {
     margin-bottom: -5px;
 }
 
