@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!doctype html>
+    <html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="modello.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    </head>
+    <body style="margin: 0 auto;">
+    <!--------------------------  Body ----------------------------------->
+    
+    
+    <!------------------Inizio NAV BAR------------------------->
+    <div class="NavBarAll">
+      <div class="topnav" id="myTopnav">
+        <a class="active"><img src="LogoAV.png style="width: 15vh;"></a>
+          <a href="#Modelli">Modelli</a>
+          <a href="#Testimonianza">Testimonianza</a>
+          <a href="#Contatti">Contatti</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+      </div>
+    </div>
+    
+    
+    
+    <script>
+        function toggleResponsiveMenu() {
+            var navbar = document.getElementById("myTopnav");
+            if (navbar.className === "topnav") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "topnav";
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            // Setup event listeners for menu items
+            const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    var navbar = document.getElementById("myTopnav");
+                    if (navbar.className.includes("responsive")) {
+                        navbar.className = "topnav";
+                    }
+                });
+            });
+        });
+      </script>
+    <!------------------Fine NAV BAR------------------------->
+    
+    
 
+    <img src="image6.jpeg" alt="">
+    
+    <h1 id="titolo">PIZZERIA</h1>
+ 
+    <div id="li">
+        <div>
+            <h3>Pizze</h3>
+            <div id="uno">
+                <p>Focaccia</p>
+                <i>Flat Bread</i>
+                
+                <p>Pizza Margherita</p>
+                <i>With tomato and mozzarella cheese</i>
+                
+                <p>Pizza Napoli</p>
+                <i>Tomato, mozzarella cheese, and anchovies</i>
+                
+                <p>Pizza Marinara</p>
+                <i>With tomato, garlic, and origanum</i>
+                
+                <p>Pizza ai Funghi</p>
+                <i>With mushrooms</i>
+                
+                <p>Pizza Capricciosa</p>
+                <i>With tomato, mozzarella cheese, ham, mushrooms, olives, eggs, and artichokes</i>
+                
+                <p>Pizza Francescana</p>
+                <i>With mozzarella cheese, tomato, mushrooms, and ham</i>
+                
+                <p>Pizza 4 Formaggi</p>
+                <i>With 4 cheeses</i>
+                
+                <p>Pizza Diavola</p>
+                <i>With tomato and red pepper</i>
+                
+                <p>Pizza ai Funghi Porcini</p>
+                <i>With boletus mushrooms</i>
+                
+                <p>Trattoria da "GIUSEPPE"</p>
+                
+                <p>Pizza Boscaiola</p>
+                <i>With sausage, mushrooms, and cheese</i>
+                
+                <p>Pizza Ortolana</p>
+                <i>With different vegetables</i>
+                
+                <p>Pizza Pachino e Rughetta</p>
+                <i>With cherry tomatoes and rocket</i>
+                
+                <p>Pizza Bresaola e Rughetta</p>
+                <i>With dried beef and rocket</i>
+                
+                <p>Crostino alle Alici</p>
+                <i>Canapé with anchovies</i>
+                
+                <p>Crostino Prosciutto e Funghi</p>
+                <i>Canapé with ham and mushrooms</i>
+                
+                <p>Calzone Ripieno</p>
+                <i>Baked stuffed pizza with filling</i>
+                
+            </div>
+        </div>
+    </div>
+
+    <!------------------Inizio Footer------------------------->
+            <div class="footer">
+            <br><br>
+            <p>Copyright © 2023 AndVit | All Rights Reserved</p>
+            <br>
+            </div>
+</body>
+</html>
