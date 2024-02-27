@@ -1,402 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
     margin: 0px auto 0px;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;}
-
-/* ------------------------------------Body css-------------------------------------------------- */
-/* -----------------------Iizio Navbar css------------------------ */
-.NavBarAll {
-    font-weight: bold;
-    display: flex;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: #d4a704; 
-    box-shadow: 0 4px 8px 0 #0000005d, 0 6px 20px 0 #0000005d;
-    overflow: hidden;
-  }
-
-  .topnav {
-    overflow: hidden;
-    width: 100%;
-    background-color: #d4a704; 
-      border-bottom: 1px solid white ;
-    }
-    
-    .topnav a {
-      text-align: center;
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .active {
-      color: white;
-    }
-    
-    .topnav .icon {
-      display: none;
-    }
-    
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-      font-size: 17px;    
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: black;
-      color: white;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #ddd;
-      color: black;
-      
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none;
-        
-      }
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-    }  
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      .topnav.responsive .dropdown {float: none;}
-      .topnav.responsive .dropdown-content {position: relative;}
-      .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
-  
-
-
-
-
-/* -----------Fine NAV BAR css------------------------*/ 
-
-body {
-  margin: 0px auto 0px;
 }
-
-
-
-
-
-
-
-
 img {
-  width: 100%;
-  max-height: 450px;
-  object-fit: cover;
-  overflow: hidden;
-
-
-
-  position: relative;
-  top: 0;
-  z-index: -1;
+    width: 100%;
 }
-
-#titolo {
-  text-align: center;
-  color: white;
-  background-color: #291E00;
-  padding: 10px;
-  margin: -30px 50px 0px 50px;
-  border-radius: 20px;
-  box-shadow: -5px 5px 10px black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#HOME {
-    width: 80%;
-}
-
-.TRATTORIAPIZZERIA {
-    margin-bottom: -10px;
-    font-weight: 900;
-    font-size: 30px;
-    color: white;
-}
-
-.DAGIUSEPPE {
-    font-weight: 900;
-    font-size: 50px;
-    color: #FFC90B;
-}
-
-#lista {
-  margin-top: 15px;
-  display: flex;  
-  flex-wrap: wrap;
-  justify-content: center; /* Centra lungo l'asse orizzontale */
-}
-a.elementi {
-  margin-bottom: 10px;
-}
-
-
-@media screen and (max-width: 600px){
-
-
-
-        .TRATTORIAPIZZERIA {
-          margin-bottom: -10px;
-          font-weight: 900;
-          font-size: 16px;
-          color: white;
-      }
-      
-      .DAGIUSEPPE {
-          font-weight: 900;
-          font-size: 34px;
-          color: #FFC90B;
-      }
-
-
-
-
-
-
-}
-
-
-
-
-a.elementi {
-  width: 90%;
-}
-
-
-
-
-.elementi {
-
-    background-color: #7a5e01;
-    color:#FFC90B;
-
-    font-size: 16px;
-    font-weight: 900;
-
-    margin: 3px 8px;
-    width: 380px;
-    
-    border-radius: 18px;
-    padding: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
- margin: 20px ;
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.623);
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.896);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin: auto;
-    flex-direction: row; /* Items side by side */
-    padding: 3px 9% 30px 9%;
-}
-
-.slideshow-container {
-    flex: 1; 
-
-}
-
-.description-wrapper {
-    flex: 1; /* Adjust as needed */
-    margin: auto auto;
+.titolo {
     text-align: center;
-    align-items: center;
+    color: white;
+    background-color: #a27f00;
+    padding: 10px;
+    margin: -50px 50px 0px 50px;
+    border-radius: 25px;
+    box-shadow: -5px 5px 10px black;
 }
-
-.slideshow-container img {
-    width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-
+.li {
+    font-weight: bold;
+    font-size: larger;
+    background-color: #fbe7c3;
+    margin: 30px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
-
-@media screen and (max-width: 600px) {
-    .content-container {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    .slideshow-container {
-        width: 85%; }
+.li h3 {
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-top: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -----------Inizio Footer css------------------------*/ 
-    .footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        justify-content: center;
-        padding: 15px;
-    }
-/* -----------Fine Footer css--------------------------*/ 
+.li p, i {
+    padding-left: 30px;
+}
+.li p {
+    margin-bottom: -5px;
+}
+.li i {
+    color: #6c6354;
+}
+.li div {
+    margin-left: 20px;
+}
