@@ -1,44 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Satisfy&display=swap');
+
 body {
     margin: 0px auto 0px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #ebddc1;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+}
+
+/* ------------------------------------Body css-------------------------------------------------- */
+/* -----------------------Iizio Navbar css------------------------ */
+.NavBarAll {
+    font-weight: bold;
+    display: flex;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%; 
+    overflow: hidden;
+  }
+
+  .topnav {
+    overflow: hidden;
+    width: 100%;
+
+    }
+    
+    .topnav a {
+      float: right;
+      display: block;
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .active {
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 17px;    
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .topnav a:hover, .dropdown:hover .dropbtn { 
+      background-color: black;
+      color: white;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+      
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+        
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }  
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {float: none;}
+      .topnav.responsive .dropdown-content {position: relative;}
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  
+
+
+
+
+/* -----------Fine NAV BAR css------------------------*/ 
+
+body {
+  margin: 0px auto 0px;
 }
 img {
-    width: 100%;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: -1;
 }
-.titolo {
-    text-align: center;
+
+#titolo {
+  text-align: center;
+  background-color: #4b3d0e;
+  padding: 10px;
+  margin: 30px 50px 0px 50px;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px black;
+}
+
+#HOME {
+    width: 80%;
+}
+
+.TRATTORIAPIZZERIA {
+    margin-bottom: -10px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ebddc1;
+}
+
+.DAGIUSEPPE {
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFC90B;
+}
+
+#lista {
+  margin-top: 15px;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: center; /* Centra lungo l'asse orizzontale */
+}
+a.elementi {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+
+
+
+.elementi {
+
+    background-color: #735d1b;
+    color:#c9a436;
+    margin-right: 10px;
+    width: 300px;
+
+    font-size: 16px;
+    font-weight: 900;
+    
+    border-radius: 18px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 600px){
+
+
+
+  .TRATTORIAPIZZERIA {
+    margin-bottom: -10px;
+    font-weight: 900;
+    font-size: 16px;
     color: white;
-    background-color: #a27f00;
-    padding: 10px;
-    margin: -50px 50px 0px 50px;
-    border-radius: 25px;
-    box-shadow: -5px 5px 10px black;
 }
-.li {
-    font-weight: bold;
-    font-size: larger;
-    background-color: #fbe7c3;
-    margin: 30px 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    padding-bottom: 30px;
-    padding-right: 20px;
+
+.DAGIUSEPPE {
+    font-weight: 900;
+    font-size: 34px;;
+}
+.elementi {
+  width: 90%;
+}
+}
+#service {
+  background-color: #FFC90B;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#service img {
+  width: 60px;
+  z-index: 1;
+  margin-top: -20px;
+  background-color: #ebddc1;
+  padding: 30px;
+  border-radius: 60px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+ margin: 20px ;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.896);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.content-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    flex-direction: row; /* Items side by side */
+    padding: 3px 9% 30px 9%;
 }
-.li h3 {
-    padding-top: 10px;
-    padding-left: 20px;
-    margin-top: 30px;
+
+.slideshow-container {
+    flex: 1; 
+
 }
-.li p, i {
-    padding-left: 30px;
+
+.description-wrapper {
+    flex: 1; /* Adjust as needed */
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
 }
-.li p {
-    margin-bottom: -5px;
+
+.slideshow-container img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+
 }
-.li i {
-    color: #6c6354;
+
+
+
+@media screen and (max-width: 600px) {
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .slideshow-container {
+        width: 85%; }
 }
-.li div {
-    margin-left: 20px;
+
+#contatti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+#contatti div {
+  margin-right: 40px;
+}
+#contatti a {
+  color: black;
+  text-decoration: none;
+}
+#contatti .instagram:hover {
+  font-size: x-large;
+  font-weight: bold;
+  transition: ease 0.2s;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1#info {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #contatti {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+
+/* -----------Inizio Footer css------------------------*/ 
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+/* -----------Fine Footer css--------------------------*/ 
