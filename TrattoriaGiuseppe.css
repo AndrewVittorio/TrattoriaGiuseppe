@@ -8,12 +8,15 @@ body {
       font-family: "Kanit", sans-serif;
       font-weight: 400;
       font-style: normal;
-    
+}
+* {
+  transition: ease-in-out 0.5s;
 }
 
 /* ------------------------------------Body css-------------------------------------------------- */
 /* -----------------------Iizio Navbar css------------------------ */
 .NavBarAll {
+  background-color: #ebddc1;
     font-weight: bold;
     display: flex;
     z-index: 10000;
@@ -154,25 +157,12 @@ img {
   box-shadow: -5px 5px 10px black;
 }
 
-#HOME {
-    width: 80%;
+#HOME img {
+    width: 70%;
+    margin-top: 50px;
 }
-
-.TRATTORIAPIZZERIA {
-    margin-bottom: -10px;
-    font-weight: 900;
-    font-size: 30px;
-    color: #ebddc1;
-}
-
-.DAGIUSEPPE {
-    font-weight: 900;
-    font-size: 50px;
-    color: #FFC90B;
-}
-
 #lista {
-  margin-top: 15px;
+  margin-top: 5px;
   display: flex;  
   flex-wrap: wrap;
   justify-content: center; /* Centra lungo l'asse orizzontale */
@@ -217,21 +207,6 @@ a.elementi {
 .elementi {
   width: 90%;
 }
-}
-#service {
-  background-color: #FFC90B;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: space-evenly;
-}
-#service img {
-  width: 60px;
-  z-index: 1;
-  margin-top: -20px;
-  background-color: #ebddc1;
-  padding: 30px;
-  border-radius: 60px;
-
 }
 
 /* Slideshow container */
@@ -346,7 +321,33 @@ a.elementi {
     .slideshow-container {
         width: 85%; }
 }
-
+#service {
+  background-color: #FFC90B;
+  padding: 50px 0px 70px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -20px;
+}
+#service img {
+  width: 40px;
+  z-index: 1;
+  margin-top: -30px;
+  background-color: #ebddc1;
+  padding: 20px;
+  border-radius: 60px;
+}
+#paragraf {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 25px;
+  text-align: center;
+  margin-top: -60px;
+}
+#service img:hover {
+  filter: drop-shadow(0px 5px 20px black);
+  background-color: #FFC90B;
+  transition: ease 0.5s;
+}
 #contatti {
   display: flex;
   flex-wrap: wrap;
