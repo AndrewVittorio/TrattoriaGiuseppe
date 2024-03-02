@@ -27,11 +27,6 @@ body {
     overflow: hidden;
   }
 
-a.vuoto {
-    dysplay: none;
-    }
-
-
   .topnav {
     overflow: hidden;
     width: 100%;
@@ -114,9 +109,6 @@ a.vuoto {
         display: block;
       }
 
-        a.vuoto {
-    dysplay: block;
-    }
         
     }  
     @media screen and (max-width: 600px) {
