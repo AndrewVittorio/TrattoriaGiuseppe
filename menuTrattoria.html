@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
-    <title>Document</title>
+    <title>Menu</title>
+    <link rel="icon" href="logo icona.png" type="png">
+        <meta charset="utf-8">
 </head>
 <body><div class="NavBarAll">
-    <div class="topnav" id="myTopnav">
-      <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
-        <a href="#Modelli">Modelli</a>
-        <a href="#Testimonianza">Testimonianza</a>
-        <a href="#Contatti">Contatti</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+    <div class="topnav" id="myTopnav"> 
+        <img style="width: 100px; z-index: 1; float: left; margin: 10px 0px 0px 5px;" src="logo senza icona invertito.png" alt="">
+        <a href="#primi">PRIMI</a>
+          <a href="#secondi">SECONDI</a>
+          <a href="#dessert">DESSER</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+      </div>
     </div>
   </div>
   
@@ -101,7 +104,7 @@
             <P>OMELETTE A PIACERE</P>
         </div>
 
-        <div>    
+        <div id="primi">    
             <h3>PRIMI DI TERRA - FIRST COURSE</h3>        
             <P>TONNARELLI CACIO E PEPE</P>
             <I>TONNARELLI WITH CHEES AND PEPPER</I>
@@ -141,7 +144,7 @@
             
             <p>LASAGNA / CANNELLONI</p>          
         </div> 
-        <div>
+        <div id="secondi">
             <h3>SECONDI PIATTI - SECOND COURSE</h3>
 
             <p>BISTECCA DI MANZO</p>
@@ -334,7 +337,7 @@
     <img src="image4.jpeg" alt="">
     <h1 class="titolo">DESSERT</h1>
     <div class="li">    
-        <div>
+        <div id="dessert">
             <p>FRUTTA MISTA</p>
             <i>MIXED FRUIT</i>
             
