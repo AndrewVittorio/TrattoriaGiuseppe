@@ -17,6 +17,7 @@ body {
 /* -----------------------Iizio Navbar css------------------------ */
 .NavBarAll {
   background-color: #ebddc1;
+  border-color: 2px solid #c9a436 ;  
     font-weight: bold;
     display: flex;
     z-index: 10000;
