@@ -295,7 +295,7 @@ a.elementi {
 
 }
 
-.description-wrapper {
+#description-wrapper {
     flex: 1; /* Adjust as needed */
     margin: auto auto;
     text-align: center;
