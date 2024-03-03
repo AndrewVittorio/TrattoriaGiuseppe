@@ -104,8 +104,6 @@ body {
       float: right;
       display: block;
     }
-  }  
-  @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -124,6 +122,9 @@ body {
       width: 100%;
       text-align: left;
     }
+      img#imgnav {
+         justify-content: center;    
+      }
   }
 img {
     width: 100%;
