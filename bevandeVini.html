@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bevande e vini</title>
     <link rel="stylesheet" href="menu.css">
-    <link rel="icon" href="logo icona.png" type="png">
+    <link rel="icon" href="logo icona.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 <body style="margin: 0 auto;">
@@ -23,8 +23,6 @@
         </div>
     </div>
     
-    
-    
     <script>
         function toggleResponsiveMenu() {
             var navbar = document.getElementById("myTopnav");
@@ -36,7 +34,7 @@
         }
         
         document.addEventListener("DOMContentLoaded", function () {
-            // Setup event listeners for menu items
+            // Setup event listeners for menu items to close the responsive menu when a link is clicked
             const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
             menuItems.forEach(item => {
                 item.addEventListener('click', function() {
@@ -47,7 +45,7 @@
                 });
             });
         });
-      </script>
+    </script>
     <!------------------Fine NAV BAR------------------------->
     
     
