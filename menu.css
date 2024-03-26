@@ -187,3 +187,25 @@ img {
     justify-content: center;
     padding: 0px;
 }
+
+
+
+
+
+
+#navLogo {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    float: left; /* Align logo to the left */
+    margin-right: 10px; /* Add some space between logo and the first nav item */
+}
+
+/* Your existing CSS continues here... */
+
+/* Make sure to adjust the CSS inside the media query for responsive design */
+@media screen and (max-width: 600px) {
+    #navLogo {
+        width: 50px; /* Smaller logo for mobile devices */
+    }
+
+
