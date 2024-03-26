@@ -197,6 +197,8 @@ img {
     width: 30px; /* Adjust the width as needed */
     float: left; /* Align logo to the left */
     margin-right: 10px; /* Add some space between logo and the first nav item */
+    position: absolute; /* Positioned relative to its first positioned ancestor */
+  z-index: 2; /* Higher z-index will be on top */
 }
 
 @media screen and (max-width: 600px) {
